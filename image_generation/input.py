@@ -1,12 +1,12 @@
 
 
 
-
+# takes prompt and quality input from user
 def get_input():
     prompt = input("Enter what you want to generate: ")
-    if len(prompt) < 10:
+    if len(prompt) < 5:
         print("Invalid Prompt or Prompt too short!")
-        print("Prompt must be at least 10 characters long")
+        print("Prompt must be at least 5 characters long")
         return get_input()
 
     quality = input("Select Quality (Standard or HD): ")

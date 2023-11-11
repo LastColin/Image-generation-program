@@ -3,6 +3,7 @@ import datetime
 import os
 
 
+# Download image from url and save it to images folder
 def download_image(url, filename):
     filename = filename.replace(" ", "_")
     date = datetime.datetime.now().strftime("%d-%m-%Y")
